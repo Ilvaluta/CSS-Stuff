@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:800");
+body {
+		padding: 0;
+		margin: 0;
+		background: #527dc7;
+}
+
+.sky {
+		height: 100%;
+		width: 100%;
+}
+
+.sky .ray {
+		background: rgba(254, 235, 197, 0.24);
+		box-shadow: 0px 0px 24px 16px rgba(254, 235, 197, 0.24);
+		border-radius: 8px;
+		position: absolute;
+}
+
+.sky .rays {
+		position: absolute;
+		left: 152.5px;
+		top: 12.5px;
+		height: 80px;
+		width: 80px;
+		z-index: 1;
+		animation: rays 60s linear infinite;
+		animation-direction: alternate;
+}
+
+.sky .rays .ray-1 {
+		top: 0;
+		height: 60px;
+		width: 16px;
+}
+
+.sky .rays .ray-2 {
+		top: 72px;
+		height: 60px;
+		width: 16px;
+}
+
+.sky .rays .ray-3 {
+		top: 36px;
+		right: 30px;
+		height: 60px;
+		width: 16px;
+		transform: rotate(90deg);
+}
+
+.sky .rays .ray-4 {
+		top: 36px;
+		left: -36px;
+		height: 60px;
+		width: 16px;
+		transform: rotate(270deg);
+}
+
+.sky .rays .ray-5 {
+		top: 32px;
+		left: 32px;
+		height: 28px;
+		width: 8px;
+		transform: rotate(45deg);
+}
+
+.sky .rays .ray-6 {
+		top: 80px;
+		left: 32px;
+		height: 28px;
+		width: 8px;
+		transform: rotate(135deg);
+}
+
+.sky .rays .ray-7 {
+		top: 80px;
+		left: -22px;
+		height: 28px;
+		width: 8px;
+		transform: rotate(225deg);
+}
+
+.sky .rays .ray-8 {
+		top: 32px;
+		left: -22px;
+		height: 28px;
+		width: 8px;
+		transform: rotate(315deg);
+}
+
+.sky .sun {
+		position: absolute;
+		left: 120px;
+		top: 40px;
+		width: 80px;
+		height: 80px;
+		background: white;
+		border-radius: 50%;
+		background: #fbe35f;
+		box-shadow: 0px 0px 15px 0px #fbe35f inset;
+		animation: orbit 60s linear infinite;
+		animation-direction: alternate;
+}
+
+.sky .text {
+		text-align: center;
+		padding-top: 140px;
+}
+
+.sky .text .non-shadow {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 5em;
+		color: #EAEAEA;
+		text-shadow: -1px -1px 0 #EAEAEA,-2px -2px 0 #dedede,-3px -3px 0 #d2d2d2,-4px -4px 0 #c4c4c4,-5px -5px 0 #b5b5b5,-6px -6px 0 #aaaaaa;
+}
+
+.sky .text .shadow {
+		position: absolute;
+		top: 27.4%;
+		left: 47.1%;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 5em;
+		color: rgba(255, 255, 255, 0);
+		text-shadow: 46px 46px 0 #333;
+		transform: rotate(180deg) skew(50deg, 0deg);
+		animation: shadow 60s linear infinite;
+		animation-direction: alternate;
+}
+
+@keyframes rays {
+		0% {
+				left: 152.5px;
+		}
+		25% {
+				left: 412.5px;
+		}
+		50% {
+				left: 792px;
+		}
+		75% {
+				left: 1172px;
+		}
+		100% {
+				left: 1452px;
+		}
+}
+
+@keyframes orbit {
+		0% {
+				left: 120px;
+		}
+		25% {
+				left: 380px;
+		}
+		50% {
+				left: 760px;
+		}
+		75% {
+				left: 1140px;
+		}
+		100% {
+				left: 1420px;
+		}
+}
+
+@keyframes shadow {
+		0% {
+				transform: rotate(180deg) skew(50deg, 0deg);
+				left: 47.1%;
+		}
+		25% {
+				transform: rotate(180deg) skew(25deg, 0deg);
+				left: 43.5%;
+		}
+		50% {
+				transform: rotate(180deg) skew(0deg, 0deg);
+				left: 41.5%;
+		}
+		75% {
+				transform: rotate(180deg) skew(-25deg, 0deg);
+				left: 39.3%;
+		}
+		100% {
+				transform: rotate(180deg) skew(-50deg, 0deg);
+				left: 35.8%;
+		}
+}
