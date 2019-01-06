@@ -1,0 +1,63 @@
+body
+  background: rgb(201, 201, 201)
+
+.container
+  margin-left: 40%
+  margin-right: 40%
+  margin-top: 10%
+
+.clock
+  position: relative
+  height: 240px
+  width: 240px
+  background: #EAEAEA
+  border-radius: 50%
+  border: 8px solid black
+  .middle
+    height: 12px
+    width: 12px
+    background: black
+    border-radius: 50%
+    position: absolute
+    top: 50%
+    left: 50%
+    margin: -6px 0 0 -6px
+    box-shadow: inset 0px 0px 4px 0px #cdcdcd
+    z-index: 10
+  .arms
+    .seconds
+      height: 120px
+      width: 4px
+      background: #333
+      position: absolute
+      left: 50%
+      margin-left: -2px
+      animation: rotate 10s infinite steps(60)
+      transform-origin: bottom center
+    .minutes
+      height: 110px
+      width: 5px
+      background: #333
+      position: absolute
+      left: 50%
+      top: 5%
+      margin-left: -2.5px
+      animation: rotate 600s infinite steps(60)
+      transform-origin: bottom center
+      z-index: 1
+    .hours
+      height: 80px
+      width: 7px
+      background: #333
+      position: absolute
+      left: 50%
+      top: 18%
+      margin-left: -3.5px
+      animation: rotate 7200s linear infinite
+      transform-origin: bottom center
+      z-index: 2
+
+
+@keyframes rotate
+  100%
+    transform: rotateZ(360deg)
