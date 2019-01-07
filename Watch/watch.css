@@ -1,0 +1,137 @@
+body {
+		background: rgba(239, 255, 175, 0.2);
+}
+
+.container {
+		margin: 20% 40% 25% 40%;
+		position: relative;
+}
+
+.strap {
+		position: absolute;
+		height: 680px;
+		width: 180px;
+		top: -90%;
+		left: 50%;
+		margin-left: -80px;
+		z-index: 1;
+		background: #624a2e;
+		border-radius: 88px 88px 0 0;
+}
+
+.strap:after {
+		position: absolute;
+		content: '';
+		height: 680px;
+		width: 180px;
+		border-radius: 88px 88px 0 0;
+		background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFklEQVQYlWNgYGBIIxIPJCDajcPGMwCtlg/xVQw9DAAAAABJRU5ErkJggg==);
+}
+
+.strap .buckle {
+		position: absolute;
+		height: 60px;
+		width: 160px;
+		background: rgba(255, 255, 255, 0);
+		top: 100%;
+		left: 50%;
+		margin-left: -80px;
+		margin-top: 10px;
+		box-shadow: 0px 0px 0px 10px #ababab;
+		border-radius: 0px 0px 4px 4px;
+}
+
+.strap .buckle:before {
+		position: absolute;
+		content: '';
+		height: 80px;
+		width: 8px;
+		left: 50%;
+		margin-left: -4px;
+		background: #ababab;
+		box-shadow: 0px 3px 6px 2px rgba(0, 0, 0, 0.2);
+		border-radius: 0px 0px 8px 8px;
+}
+
+.watch {
+		position: relative;
+		height: 240px;
+		width: 240px;
+		background: #EAEAEA;
+		border-radius: 50%;
+		border: 8px solid black;
+		box-shadow: 0px 0px 2px 4px #FFD700;
+		z-index: 9;
+		left: 50%;
+		margin-left: -120px;
+}
+
+.watch:before {
+		content: '';
+		position: absolute;
+		height: 260px;
+		width: 260px;
+		border-radius: 50%;
+		border: 8px solid #FFD700;
+		box-shadow: inset 0px 0px 8px 12px #333;
+		left: 50%;
+		margin: -18px 0 0 -138px;
+		z-index: 1;
+}
+
+.watch .middle {
+		height: 12px;
+		width: 12px;
+		background: black;
+		border-radius: 50%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin: -6px 0 0 -6px;
+		box-shadow: inset 0px 0px 4px 0px #cdcdcd;
+		z-index: 10;
+}
+
+.watch .arms .seconds {
+		height: 120px;
+		width: 4px;
+		background: #333;
+		position: absolute;
+		left: 50%;
+		margin-left: -2px;
+		animation: rotate 10s infinite steps(60);
+		transform-origin: bottom center;
+		z-index: 9;
+}
+
+.watch .arms .minutes {
+		height: 110px;
+		width: 5px;
+		background: #333;
+		position: absolute;
+		left: 50%;
+		top: 5%;
+		margin-left: -2.5px;
+		animation: rotate 600s infinite steps(60);
+		transform-origin: bottom center;
+		z-index: 9;
+}
+
+.watch .arms .hours {
+		height: 80px;
+		width: 7px;
+		background: #333;
+		position: absolute;
+		left: 50%;
+		top: 18%;
+		margin-left: -3.5px;
+		animation: rotate 7200s linear infinite;
+		transform-origin: bottom center;
+		z-index: 9;
+}
+
+@keyframes rotate {
+		100% {
+				transform: rotateZ(360deg);
+		}
+}
