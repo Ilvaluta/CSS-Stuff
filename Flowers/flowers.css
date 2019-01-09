@@ -1,0 +1,154 @@
+body {
+		background: #68bde2;
+		margin: 0;
+		padding: 0;
+}
+
+.garden {
+		position: absolute;
+		background: green;
+		height: 380px;
+		width: 100%;
+		bottom: 0;
+}
+
+.flower-beds {
+		position: absolute;
+		height: 160px;
+		width: 100%;
+		top: calc(50% - 80px);
+}
+
+.flower-beds .bed-1 {
+		position: absolute;
+		height: 100%;
+		width: 20%;
+		left: 5%;
+		border-radius: 40%;
+		background: #794c13;
+}
+
+.flower-beds .bed-1 .flower .stalk {
+		position: absolute;
+		height: 280px;
+		width: 3%;
+		background: red;
+		bottom: 50%;
+		left: 48.5%;
+		z-index: 1;
+}
+
+.flower-beds .bed-1 .flower .head {
+		position: absolute;
+		height: 80px;
+		width: 80px;
+		background: #7d1e62;
+		border-radius: 50%;
+		top: -130%;
+		left: calc(50% - 40px);
+		z-index: 9;
+		box-shadow: 0px 0px 12px 12px #5d1649 inset;
+}
+
+.flower-beds .bed-1 .flower .head:after {
+		content: '';
+		position: absolute;
+		height: 80px;
+		width: 80px;
+		background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEklEQVQImWNgYGD4z0AswK4SAFXuAf8EPy+xAAAAAElFTkSuQmCC) repeat;
+		border-radius: 50%;
+		left: calc(50% - 40px);
+		z-index: 10;
+}
+
+.flower-beds .bed-1 .flower .petal-1 {
+		position: absolute;
+		height: 80px;
+		width: 80px;
+		background: pink;
+		top: -160%;
+		left: 54%;
+		z-index: 2;
+		border-radius: 120px 0px 120px 0px;
+}
+
+.flower-beds .bed-1 .flower .petal-2 {
+		position: absolute;
+		height: 80px;
+		width: 80px;
+		background: pink;
+		top: -100%;
+		left: 20%;
+		z-index: 2;
+		border-radius: 120px 0px 120px 0px;
+}
+
+.flower-beds .bed-1 .flower .petal-3 {
+		position: absolute;
+		height: 80px;
+		width: 80px;
+		background: pink;
+		top: -100%;
+		left: 54%;
+		z-index: 2;
+		border-radius: 0px 120px 0px 120px;
+}
+
+.flower-beds .bed-1 .flower .petal-4 {
+		position: absolute;
+		height: 80px;
+		width: 80px;
+		background: pink;
+		top: -160%;
+		left: 20%;
+		z-index: 2;
+		border-radius: 0px 120px 0px 120px;
+}
+
+.flower-beds .bed-1 .flower .petal-5 {
+		position: absolute;
+		height: 80px;
+		width: 80px;
+		background: pink;
+		top: -166%;
+		left: 36.5%;
+		z-index: 2;
+		border-radius: 0px 120px 0px 120px;
+		transform: rotate(45deg);
+}
+
+.flower-beds .bed-1 .flower .petal-6 {
+		position: absolute;
+		height: 80px;
+		width: 80px;
+		background: pink;
+		top: -131%;
+		left: 58%;
+		z-index: 2;
+		border-radius: 0px 120px 0px 120px;
+		transform: rotate(135deg);
+}
+
+.flower-beds .bed-1 .flower .petal-7 {
+		position: absolute;
+		height: 80px;
+		width: 80px;
+		background: pink;
+		top: -94%;
+		left: 36.5%;
+		z-index: 2;
+		border-radius: 0px 120px 0px 120px;
+		transform: rotate(225deg);
+}
+
+.flower-beds .bed-1 .flower .petal-8 {
+		position: absolute;
+		height: 80px;
+		width: 80px;
+		background: pink;
+		top: -131%;
+		left: 16%;
+		z-index: 2;
+		border-radius: 0px 120px 0px 120px;
+		transform: rotate(135deg);
+}

@@ -1,0 +1,129 @@
+body
+  background: rgb(104, 189, 226)
+  margin: 0
+  padding: 0
+
+.garden
+  position: absolute
+  background: green
+  height: 380px
+  width: 100%
+  bottom: 0
+
+.flower-beds
+  position: absolute
+  height: 160px
+  width: 100%
+  top: calc(50% - 80px)
+  .bed-1
+    position: absolute
+    height: 100%
+    width: 20%
+    left: 5%
+    border-radius: 40%
+    background: #794c13
+    .flower
+      .stalk
+        position: absolute
+        height: 280px
+        width: 3%
+        background: red
+        bottom: 50%
+        left: 48.5%
+        z-index: 1
+      .head
+        position: absolute
+        height: 80px
+        width: 80px
+        background: rgb(125, 30, 98)
+        border-radius: 50%
+        top: -130%
+        left: calc(50% - 40px)
+        z-index: 9
+        box-shadow: 0px 0px 12px 12px rgb(93, 22, 73) inset
+        &:after
+          content: ''
+          position: absolute
+          height: 80px
+          width: 80px
+          background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEklEQVQImWNgYGD4z0AswK4SAFXuAf8EPy+xAAAAAElFTkSuQmCC) repeat
+          border-radius: 50%
+
+          left: calc(50% - 40px)
+          z-index: 10
+      .petal-1
+        position: absolute
+        height: 80px
+        width: 80px
+        background: pink
+        top: -160%
+        left: 54%
+        z-index: 2
+        border-radius: 120px 0px 120px 0px
+      .petal-2
+        position: absolute
+        height: 80px
+        width: 80px
+        background: pink
+        top: -100%
+        left: 20%
+        z-index: 2
+        border-radius: 120px 0px 120px 0px
+      .petal-3
+        position: absolute
+        height: 80px
+        width: 80px
+        background: pink
+        top: -100%
+        left: 54%
+        z-index: 2
+        border-radius: 0px 120px 0px 120px
+      .petal-4
+        position: absolute
+        height: 80px
+        width: 80px
+        background: pink
+        top: -160%
+        left: 20%
+        z-index: 2
+        border-radius: 0px 120px 0px 120px
+      .petal-5
+        position: absolute
+        height: 80px
+        width: 80px
+        background: pink
+        top: -166%
+        left: 36.5%
+        z-index: 2
+        border-radius: 0px 120px 0px 120px
+        transform: rotate(45deg)
+      .petal-6
+        position: absolute
+        height: 80px
+        width: 80px
+        background: pink
+        top: -131%
+        left: 58%
+        z-index: 2
+        border-radius: 0px 120px 0px 120px
+        transform: rotate(135deg)
+      .petal-7
+        position: absolute
+        height: 80px
+        width: 80px
+        background: pink
+        top: -94%
+        left: 36.5%
+        z-index: 2
+        border-radius: 0px 120px 0px 120px
+        transform: rotate(225deg)
+      .petal-8
+        position: absolute
+        height: 80px
+        width: 80px
+        background: pink
+        top: -131%
+        left: 16%
+        z-index: 2
+        border-radius: 0px 120px 0px 120px
+        transform: rotate(135deg)
