@@ -79,6 +79,58 @@
 		border-bottom: 100px solid hotpink;
 }
 
+.howto-triangle {
+		background: #c4c4c4;
+}
+
+.howto-triangle div {
+		display: inline-block;
+		margin: 16px;
+}
+
+.all-borders {
+		height: 40px;
+		width: 40px;
+		border-top: 20px red solid;
+		border-right: 20px pink solid;
+		border-bottom: 20px green solid;
+		border-left: 20px orange solid;
+		background: hotpink;
+}
+
+.no-top-border {
+		height: 40px;
+		width: 40px;
+		border-right: 20px pink solid;
+		border-bottom: 20px green solid;
+		border-left: 20px orange solid;
+		background: hotpink;
+}
+
+.no-top-width {
+		height: 40px;
+		width: 0;
+		border-right: 20px pink solid;
+		border-bottom: 20px green solid;
+		border-left: 20px orange solid;
+}
+
+.no-top-height {
+		height: 0;
+		width: 0;
+		border-right: 20px pink solid;
+		border-bottom: 20px green solid;
+		border-left: 20px orange solid;
+}
+
+.no-top-transparent {
+		height: 0;
+		width: 0;
+		border-right: 20px transparent solid;
+		border-bottom: 20px green solid;
+		border-left: 20px transparent solid;
+}
+
 .square {
 		height: 80px;
 		width: 80px;
